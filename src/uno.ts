@@ -28,3 +28,16 @@ const definirCompra = (pagototal : number) => {
 }
 
 document.write(definirCompra(pagoTotal));
+
+//! Coflat golpeo a un tipo y le dio el vuelto aun vagabundo
+
+document.write(`------------------------Ejercicio 2---------------------------`);
+let boletos = parseFloat(window.prompt(`Cuanto vale el boleto de loteria?`));
+var boletoComprar = 0;
+
+while (boletos <= pagoTotal) {
+    boletos -= pagoTotal;
+    boletoComprar++;
+}
+
+document.write(`Los boletos que puedes comprar son ${boletoComprar}`);
